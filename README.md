@@ -1,5 +1,5 @@
 # Practical LSTM Time Series Prediction for Forex with TensorFlow and Algorithmic Bot
-This is the companion code to [Link](https://google.com). So, if you want to understand the intention of the code, I highly recommend reading the article series first.
+This is the companion code to [Pragmatic LSTM for a Forex Time Series](https://medium.com). So, if you want to understand the intention of the code, I highly recommend reading the article series first.
 ## Setting Up The Environment
 The model training and prediction have been tested on both Ubuntu Linux 20.04 and Windows 10 and both work as expected.
 To prepare your machine to run the code, follow these steps:
@@ -22,9 +22,11 @@ N.B. Keras became part of TensorFlow from v2, no need to install it separately.
 |
 ├─LSTM-FX-CTrader-Client        # Directory of the client code
 │     MLBot.cs                  # Sample bot C# code
+│     README.md                 # Read me for the CTrader Client
 |
 ├─LSTM-FX-Prediction-Server     # Directory of the Web Server
 │ │   main.py                   # The web server loading file
+│ │   README.md                 # Read me for the Prediction server
 │ │
 │ └───Models                    # Directory of the ML Models 
 │     │   gbpusd-32-256-14.bin  # Sample MinMax Scaler
@@ -35,12 +37,12 @@ N.B. Keras became part of TensorFlow from v2, no need to install it separately.
   │   common_variables.py       # Configures your model before training and testing
   │   multi_pred_model.ipynb    # Multiple predictions of more than one unit
   │   prep_and_split.ipynb      # Prepares your data and splits it into multiple CSVs
+  │   README.md                 # Read me for the training and testing
   │   test_model.ipynb          # Tests your trained model
   │   time_series.py            # Utility reusable functions 
   │   train_model.ipynb         # Trains your model
   │
-  ├───data                      # Contains the data set
-  │       gbpusd.csv            # Sample training data using GBPUSD
+  ├───data                      # storage direcotry for the CSV
   │
   ├───models                    # Contains the trained models
   │   └───gbpusd-32-256-14      # Sample trained model
